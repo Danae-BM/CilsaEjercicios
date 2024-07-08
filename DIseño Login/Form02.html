@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FormDiseñoAltoContraste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(189, 192, 192);
+            background-color: #000000;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #fdbd74;
+            border-radius: 5px;
+            
+        }
+        .container h2 {
+            text-align: center;
+        }
+        .container label {
+            display: block;
+            margin-top: 10px;
+           
+        }
+        .container input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .container button, .container input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #fccea0;
+            color: rgb(2, 2, 2);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container button:hover, .container input[type="button"]:hover {
+            background-color: #ffe2c2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulario de Datos Personales</h2>
+    <form action="" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="email@email.com">
+        
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="dd/mm/aaaa" required>
+        
+        <label for="pais_residencia">País de Residencia:</label>
+        <input type="text" id="pais_residencia" name="pais_residencia" required placeholder="ingrese un pais">
+        
+        <button type="submit">Enviar</button>
+
+        <input type="button" value="Estilo 1" onclick="cambiarEstilo(1)">
+        <input type="button" value="Estilo de Alto Contraste" onclick="cambiarEstilo(2)">
+    </form>
+</div>
+
+<script>
+    function cambiarEstilo(estilo) {
+        if (estilo === 1) {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+            document.container.style.backgroundColor = "white";
+        } else if (estilo === 2) {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+            document.container.style.backgroundColor = "black";
+        }
+    }
+    </script>
+
+</body>
+</html>
