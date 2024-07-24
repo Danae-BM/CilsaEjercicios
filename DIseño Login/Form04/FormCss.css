@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1F2C9;
+}
+.card {
+    border-color: #DCF2AC;
+}
+.card-body {
+    background-color: #738C3E;
+    color: #ffffff;
+}
+.btn-primary {
+    background-color: #69731F;
+    border-color: #A3D96C;
+    color: #282828;
+}
+.btn-primary:hover {
+    background-color: #F2E3B3;
+    border-color: #69731F;
+    color: #282828;
+}
+.form-control:focus {
+    border-color: #F2E3B3;
+    box-shadow: 0 0 0 0.2rem rgba(71, 188, 137, 0.25);
+}
+.invalid-feedback {
+    color: #734A27;
+    font-size:large;
+    
+}
+.is-valid {
+    border-color: #734A27;
+}
+.is-invalid {
+    border-color: #8C4303;
+}
+.error {
+    color: #8C4303;
+}

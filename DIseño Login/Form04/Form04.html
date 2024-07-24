@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="FormCss.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="text-center">Formulario de Datos Personales</h2>
+            <form id="datosPersonalesForm" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Nombre">
+                    <div class="invalid-feedback">Por favor, introduce un nombre válido.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" required placeholder="Apellido">
+                    <div class="invalid-feedback">Por favor, introduce un apellido válido.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="email@email.com">
+                    <div class="invalid-feedback">Por favor, introduce un email válido.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="dd/mm/aaaa" required>
+                    <div class="invalid-feedback">Por favor, introduce una fecha válida.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pais_residencia">País de Residencia:</label>
+                    <input type="text" class="form-control" id="pais_residencia" name="pais_residencia" required placeholder="Ingrese un país">
+                    <div class="invalid-feedback">Por favor, introduce un país de residencia válido.</div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script src="FormJs.js"></script>
